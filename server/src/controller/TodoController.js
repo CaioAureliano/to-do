@@ -30,7 +30,7 @@ export default function TodoController() {
                 res
                     .location(`${TODO_PATH}/${_id}`)
                     .status(201)
-                    .json({ _id });
+                    .json({ todo });
             })
             .catch(next);
     }
